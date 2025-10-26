@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday Pooja 🎂</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background gradient + decorative container -->
+  <div class="page-bg">
+    <!-- Floating balloons -->
+    <div class="balloons" aria-hidden="true">
+      <div class="balloon b1"></div>
+      <div class="balloon b2"></div>
+      <div class="balloon b3"></div>
+      <div class="balloon b4"></div>
+      <div class="balloon b5"></div>
+    </div>
+
+    <!-- Confetti canvas -->
+    <canvas id="confetti"></canvas>
+
+    <!-- Main content -->
+    <main class="container">
+      <!-- Opening hero -->
+      <section class="hero" id="hero">
+        <h1 class="title">Happy Birthday <span class="name">Pooja</span> 🎂</h1>
+        <p class="subtitle">Wishing you a day full of love, laughter & magic ✨</p>
+
+        <!-- Music controls -->
+        <div class="music-controls">
+          <audio id="bg-music" loop>
+            <!-- Put your song file in the same folder and name it exactly or edit the src -->
+            <source src="Tumhare Hi Rahenge Hum Stree 2 128 Kbps.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <button id="toggle-music" class="btn">🔈 Play</button>
+        </div>
+      </section>
+
+      <!-- Photo slideshow -->
+      <section class="photos" id="photos">
+        <h2 class="section-heading">Memories</h2>
+        <div class="slider">
+          <!-- Add your images (image1.jpg, image2.jpg etc.) -->
+          <div class="slide">
+            <div class="photo-card">
+              <div class="photo-front" style="background-image:url('image1.jpeg')"></div>
+              <div class="photo-back">
+                <p>I Love You &hearts; </p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="photo-card">
+              <div class="photo-front" style="background-image:url('image2.jpeg')"></div>
+              <div class="photo-back">
+                <p>I Love You &hearts;</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="photo-card">
+              <div class="photo-front" style="background-image:url('image3.jpeg')"></div>
+              <div class="photo-back">
+                <p>I Love You &hearts;</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="photo-card">
+              <div class="photo-front" style="background-image:url('image4.jpeg')"></div>
+              <div class="photo-back">
+                <p>I Love You &hearts;</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="photo-card">
+              <div class="photo-front" style="background-image:url('image5.jpeg')"></div>
+              <div class="photo-back">
+                <p>I Love You &hearts;</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="photo-card">
+              <div class="photo-front" style="background-image:url('image6.jpeg')"></div>
+              <div class="photo-back">
+                <p>I Love You &hearts;</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="photo-card">
+              <div class="photo-front" style="background-image:url('image7.jpeg')"></div>
+              <div class="photo-back">
+                <p>I Love You &hearts;</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="photo-card">
+              <div class="photo-front" style="background-image:url('image8.jpeg')"></div>
+              <div class="photo-back">
+                <p>I Love You &hearts;</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="photo-card">
+              <div class="photo-front" style="background-image:url('image9.jpeg')"></div>
+              <div class="photo-back">
+                <p>I Love You &hearts;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="btn" id="prev">‹ Prev</button>
+          <button class="btn" id="next">Next ›</button>
+        </div>
+      </section>
+
+      <!-- Poem / Message -->
+      <section class="poem" id="poem">
+        <h2 class="section-heading">A Special Message</h2>
+        <div class="poem-box">
+          <!-- Replace the text here with your poem. JS will type it. -->
+          <pre id="poem-text" data-fulltext="Happy Birthday Pooja! 
+May your days be filled with joy, your nights with peace,
+and your heart with endless love."></pre>
+        </div>
+      </section>
+
+      <!-- Dialogue section - left as "" for you to fill -->
+      <section class="dialogue" id="dialogue">
+        <h2 class="section-heading">Dil Ki Baatein</h2>
+        <div class="dialogue-box">Ke tum Artech me nahi to sopra me milti, sopra me nahi to IGT me milti, noida me nahi to dehradun me milti par mai tume iss duniya ke kisi bhi gali, kone, gaav kucnhe se dhund nikalta kyuki tum meri kismat ho, I love you Pooja!</div>
+        <div class="dialogue-box">I love You, End Tak Interval Tak Nahi !</div>
+        <div class="dialogue-box">You Know why I love you ? , kyuki tu tu hai yaar, tu jab tu budhi bhi ho jaaygi na, jab tere chechre par jhuriya aa jaayegi or tu moti ho jaaygi, tab bhi tu mere liye utni hi special rahegi jitni tu abb hai, I love you !</div>
+        <div class="dialogue-box">Happiness have 9 letters, mine have 5 "Pooja" I love you !</div>
+      </section>
+
+      <!-- Final section - left as "" for you to fill -->
+      <section class="final" id="final">
+        <h2 class="section-heading">Final Note</h2>
+        <div class="final-box">Dear Pahadan <br> Tu meri bayoli banegi ?</div>
+      </section>
+
+      <!-- Footer / closing -->
+      <footer class="closing">
+        <p>Made with ❤️ by Vansh</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
